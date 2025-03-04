@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		54929DB72D773F7700CC4A48 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 54929DB62D773F7700CC4A48 /* SnapKit */; };
+		54929DBA2D773F8800CC4A48 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 54929DB92D773F8800CC4A48 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		54929D862D773A8F00CC4A48 /* UserListCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserListCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54929DB72D773F7700CC4A48 /* SnapKit in Frameworks */,
+				54929DBA2D773F8800CC4A48 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = UserListCase;
 			packageProductDependencies = (
+				54929DB62D773F7700CC4A48 /* SnapKit */,
+				54929DB92D773F8800CC4A48 /* Alamofire */,
 			);
 			productName = UserListCase;
 			productReference = 54929D862D773A8F00CC4A48 /* UserListCase.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 54929D7D2D773A8F00CC4A48;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				54929DB52D773F7700CC4A48 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				54929DB82D773F8800CC4A48 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 54929D872D773A8F00CC4A48 /* Products */;
 			projectDirPath = "";
@@ -150,7 +163,7 @@
 				INFOPLIST_FILE = UserListCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +191,7 @@
 				INFOPLIST_FILE = UserListCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +348,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54929DB52D773F7700CC4A48 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		54929DB82D773F8800CC4A48 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire?tab=readme-ov-file";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54929DB62D773F7700CC4A48 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54929DB52D773F7700CC4A48 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		54929DB92D773F8800CC4A48 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54929DB82D773F8800CC4A48 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54929D7E2D773A8F00CC4A48 /* Project object */;
 }
