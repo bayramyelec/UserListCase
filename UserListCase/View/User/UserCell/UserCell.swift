@@ -62,12 +62,10 @@ class UserCell: UITableViewCell {
             make.left.equalToSuperview().inset(20)
             make.right.equalTo(arrowImageView.snp.left).offset(5)
         }
-        
-        
     }
     
     func configure(with user: User){
-        userNameLabel.text = user.username
+        userNameLabel.text = user.name
         userEmailLabel.text = user.email
     }
     
